@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0px;
+        }
+        
+        #caixa1{
+            color: black;
+            background-color: #7fff00;
+            height: 100px;
+            width: 100px;
+            border: 10px solid gray;
+            margin: 10px;
+            padding: 10px;
+            
+        }
+
+        #caixa2{
+            color: black;
+            background-color: blue;
+            height: 100px;
+            width: 100px;
+            border: 10px solid gray;
+            margin: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div id="caixa1">
+        <p>Caixa 1</p>
+    </div>
+  <br><hr><br>
+    <div id="caixa2">
+        <p>Caixa 2</p>
+    </div>
+</body>
+</html>

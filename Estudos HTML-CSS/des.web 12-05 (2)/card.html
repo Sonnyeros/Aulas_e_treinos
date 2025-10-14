@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartões</title>
+    <style>   
+        #container{
+            display: flex;
+            flex-wrap: wrap;
+            width: 90%;
+            margin: 20px auto;
+        }
+        .card{
+            background-color: #000000;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            width: 250px;
+            padding: 10px;
+            color: white;
+        }
+        .card:hover{
+            cursor: pointer;
+            transform: scale(1.1);
+            transition: all 400ms ease;
+        }
+        .card img{
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Drummer Store</h1>
+    <div id="container">
+        <div class="card">
+            <h1>Bateria Acústica</h1>
+            <h2>Custom Hip semi-nova: de <mark><del>$ 10.000,00</del></mark> por <mark>R$8.000,00.<hr></mark></h2>
+            <img src="acústica custom hip.webp" alt="Bateria Acústica Custom Hip" title="Bateria Acústica Custom Hip">
+        </div>
+        <div class="card">
+            <h1>Bateria Eletrônica</h1>
+            <h2>DTX10K: Black Friday de <mark><del>R$15.000</del></mark> por <mark>R$12.000,00.<hr></mark></h2>
+            <img src="yamaha dtx10k.jpg" alt="Yamaha DTX10K" title="Yamaha DTX10K">
+        </div>
+        <div class="card">
+            <h1>Baquetas</h1>
+            <h2>Vic Firth 5A: 3 pares por <mark>R$ 200,00.<hr></mark></h2>
+            <img src="vic firth 5a.jpg" alt="Baquetas 5A" title="Baquetas 5A" height="50%">
+        </div>
+    </div>
+</body>
+</html>

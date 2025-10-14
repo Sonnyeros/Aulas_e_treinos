@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Escola de Bateria Sonny Heros</title>
+
+    <!-- === CSS interno === -->
+    <style>
+        /* 1. Reset e base */
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+            background-color: #f0f8ff; /* azul bem clarinho */
+            color: #0b1f3b; /* azul escuro para texto */
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        /* 2. Cabeçalho e navegação */
+        header {
+            background-color: #005f99; /* azul médio */
+            color: #ffffff;
+            padding: 1rem 1.5rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header .logo {
+            font-size: 1.75rem;
+            font-weight: bold;
+        }
+
+        nav {
+            margin-top: 0.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        nav ul li a {
+            padding: 0.5rem 0.75rem;
+            border-radius: 0.25rem;
+            transition: background-color 0.2s;
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        /* 3. Seção Hero (Home) */
+        .hero {
+            background-color: #007acc; /* azul vibrante */
+            color: #ffffff;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.125rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero .btn {
+            display: inline-block;
+            background-color: #ffffff;
+            color: #007acc;
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.25rem;
+            font-weight: bold;
+            transition: background-color 0.2s, color 0.2s;
+        }
+
+        .hero .btn:hover {
+            background-color: #e0e0e0;
+        }
+
+        /* 4. Seções principais */
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        section h2 {
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #005f99;
+            display: inline-block;
+            padding-bottom: 0.25rem;
+        }
+
+        /* 4.1 Sobre a Escola */
+        .sobre-escola p {
+            margin-bottom: 1rem;
+        }
+
+        /* 4.2 Matrícula */
+        .matricula form {
+            background-color: #ffffff;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        .matricula form .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .matricula form label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 0.25rem;
+        }
+
+        .matricula form input[type="text"],
+        .matricula form input[type="number"],
+        .matricula form input[type="email"],
+        .matricula form select,
+        .matricula form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 0.25rem;
+            font-size: 1rem;
+        }
+
+        .matricula form textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        .matricula form input[type="submit"] {
+            background-color: #005f99;
+            color: #ffffff;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 0.25rem;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .matricula form input[type="submit"]:hover {
+            background-color: #004b7a;
+        }
+
+        /* 4.3 Agendamento de Aulas */
+        .agendamento .card-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .card img {
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            flex: 1;
+            padding: 1rem;
+        }
+
+        .card-content h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.25rem;
+            color: #005f99;
+        }
+
+        .card-content p {
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        .card-content a {
+            display: inline-block;
+            margin-top: auto;
+            background-color: #007acc;
+            color: #ffffff;
+            padding: 0.5rem 1rem;
+            border-radius: 0.25rem;
+            font-size: 0.95rem;
+            transition: background-color 0.2s;
+        }
+
+        .card-content a:hover {
+            background-color: #005f99;
+        }
+
+        /* 4.4 Envio de Currículos para Professores */
+        .professores form {
+            background-color: #ffffff;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        .professores form .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .professores form label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 0.25rem;
+        }
+
+        .professores form input[type="text"],
+        .professores form input[type="email"],
+        .professores form input[type="file"],
+        .professores form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 0.25rem;
+            font-size: 1rem;
+        }
+
+        .professores form textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        .professores form input[type="submit"] {
+            background-color: #005f99;
+            color: #ffffff;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 0.25rem;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .professores form input[type="submit"]:hover {
+            background-color: #004b7a;
+        }
+
+        /* 4.5 Contato Rápido (rodapé interno) */
+        .contato-rapido {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        .contato-rapido a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background-color: #ffffff;
+            color: #0b1f3b;
+            padding: 0.75rem 1rem;
+            border-radius: 0.25rem;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+            transition: background-color 0.2s;
+        }
+
+        .contato-rapido a:hover {
+            background-color: #e0e0e0;
+        }
+
+        /* 5. Rodapé */
+        footer {
+            background-color: #0b1f3b; /* azul bem escuro */
+            color: #ffffff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+
+        footer .redes-sociais {
+            margin-top: 0.5rem;
+        }
+
+        footer .redes-sociais a {
+            margin: 0 0.5rem;
+            color: #ffffff;
+            font-size: 1.25rem;
+            transition: color 0.2s;
+        }
+
+        footer .redes-sociais a:hover {
+            color: #cccccc;
+        }
+
+        /* 6. Responsividade */
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- =============================
+         1. HEADER e MENU PRINCIPAL
+         ============================= -->
+    <header>
+        <div class="logo">Escola de Bateria Sonny Heros</div>
+        <nav aria-label="Menu Principal">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#matricula">Matrícula</a></li>
+                <li><a href="#agendamento">Agende sua Aula</a></li>
+                <li><a href="#professores">Professores</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- =============================
+         2. SEÇÃO: HOME / HERO
+         ============================= -->
+    <section id="home" class="hero" aria-labelledby="hero-title">
+        <h1 id="hero-title">Bem-vindo à Escola de Bateria Sonny Heros</h1>
+        <p>Aprenda com um músico profissional de Brasília com 10 anos de experiência em aulas e bandas. 
+           Membro da banda <a href="https://cool-sorcery.bandcamp.com/" target="_blank" rel="noopener">Cool Sorcery</a>.</p>
+        <a href="#matricula" class="btn">Matricule-se Agora</a>
+    </section>
+
+    <!-- =============================
+         3. SEÇÃO: SOBRE A ESCOLA
+         ============================= -->
+    <main>
+        <section id="sobre" class="sobre-escola" aria-labelledby="sobre-title">
+            <h2 id="sobre-title">Sobre a Escola</h2>
+            <p>A Escola de Bateria Sonny Heros foi criada por <strong>Sonny Heros</strong>, baterista profissional de Brasília, com mais de 10 anos de experiência em aulas particulares e performance em bandas. Nosso objetivo é proporcionar ensino de bateria de alta qualidade, com foco em técnica, improvisação e teoria musical.</p>
+            <p>Oferecemos turmas e aulas individuais, tanto presenciais (Sobradinho – DF) quanto online, com material didático exclusivo e metodologia personalizada para cada aluno. Nosso ambiente é voltado para alunos de todas as idades e níveis, desde iniciantes até quem já toca há anos e deseja aprimorar suas habilidades.</p>
+        </section>
+
+        <!-- =============================
+             4. SEÇÃO: MATRÍCULA
+             ============================= -->
+        <section id="matricula" class="matricula" aria-labelledby="matricula-title">
+            <h2 id="matricula-title">Formulário de Matrícula</h2>
+            <form action="#" method="post" enctype="multipart/form-data" novalidate>
+                <!-- Campo: Nome Completo -->
+                <div class="form-group">
+                    <label for="nome-aluno">Nome Completo do Aluno:</label>
+                    <input type="text" id="nome-aluno" name="nome-aluno" required placeholder="Digite seu nome completo">
+                </div>
+
+                <!-- Campo: Idade -->
+                <div class="form-group">
+                    <label for="idade-aluno">Idade:</label>
+                    <input type="number" id="idade-aluno" name="idade-aluno" min="4" max="100" required placeholder="Ex.: 16">
+                </div>
+
+                <!-- Campo: Sexo -->
+                <div class="form-group">
+                    <label for="sexo-aluno">Sexo:</label>
+                    <select id="sexo-aluno" name="sexo-aluno" required>
+                        <option value="" disabled selected>Selecione</option>
+                        <option value="feminino">Feminino</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="outro">Outro</option>
+                        <option value="prefiro-nao-dizer">Prefiro não dizer</option>
+                    </select>
+                </div>
+
+                <!-- Campo: Experiência com Instrumento -->
+                <div class="form-group">
+                    <label for="exp-instrumento">Experiência com Instrumento:</label>
+                    <select id="exp-instrumento" name="exp-instrumento" required>
+                        <option value="" disabled selected>Selecione</option>
+                        <option value="iniciante">Nenhuma (Iniciante)</option>
+                        <option value="basico">Básico (até 1 ano de prática)</option>
+                        <option value="intermediario">Intermediário (1 a 3 anos)</option>
+                        <option value="avancado">Avançado (mais de 3 anos)</option>
+                    </select>
+                </div>
+
+                <!-- Campo: Experiência em Teoria Musical -->
+                <div class="form-group">
+                    <label for="exp-teoria">Experiência em Teoria Musical:</label>
+                    <select id="exp-teoria" name="exp-teoria" required>
+                        <option value="" disabled selected>Selecione</option>
+                        <option value="nenhuma">Nenhuma</option>
+                        <option value="basica">Básica</option>
+                        <option value="intermediaria">Intermediária</option>
+                        <option value="avancada">Avançada</option>
+                    </select>
+                </div>
+
+                <!-- Campo: Telefone / WhatsApp -->
+                <div class="form-group">
+                    <label for="telefone-aluno">Telefone / WhatsApp:</label>
+                    <input type="text" id="telefone-aluno" name="telefone-aluno" required placeholder="(DDD) 9xxxx-xxxx">
+                </div>
+
+                <!-- Campo: E-mail -->
+                <div class="form-group">
+                    <label for="email-aluno">E-mail:</label>
+                    <input type="email" id="email-aluno" name="email-aluno" required placeholder="seuemail@exemplo.com">
+                </div>
+
+                <!-- Campo: Observações ou Desejos Especiais -->
+                <div class="form-group">
+                    <label for="observacoes-aluno">Observações / Desejos Especiais:</label>
+                    <textarea id="observacoes-aluno" name="observacoes-aluno" placeholder="Caso queira informar algo sobre horários, necessidades específicas etc."></textarea>
+                </div>
+
+                <!-- Botão de Envio -->
+                <div class="form-group">
+                    <input type="submit" value="Enviar Matrícula">
+                </div>
+            </form>
+        </section>
+
+        <!-- =============================
+             5. SEÇÃO: AGENDAMENTO DE AULAS
+             ============================= -->
+        <section id="agendamento" class="agendamento" aria-labelledby="agendamento-title">
+            <h2 id="agendamento-title">Agendamento de Aulas</h2>
+            <p>Escolha o tipo de aula e marque um horário diretamente conosco. Oferecemos:</p>
+            <div class="card-list">
+                <!-- Card: Aula Individual -->
+                <article class="card">
+                    <img src="https://via.placeholder.com/400x150?text=Aula+Individual" alt="Imagem representando Aula Individual">
+                    <div class="card-content">
+                        <h3>Aula Individual</h3>
+                        <p>Aulas personalizadas de bateria, focadas no seu nível e objetivos. 1h de aula presencial ou online.</p>
+                        <a href="#contato">Agendar</a>
+                    </div>
+                </article>
+
+                <!-- Card: Aula em Grupo -->
+                <article class="card">
+                    <img src="https://via.placeholder.com/400x150?text=Aula+em+Grupo" alt="Imagem representando Aula em Grupo">
+                    <div class="card-content">
+                        <h3>Aula em Grupo</h3>
+                        <p>Formação de turmas reduzidas para aprendizado em conjunto, trocando experiências e dinâmicas em grupo.</p>
+                        <a href="#contato">Agendar</a>
+                    </div>
+                </article>
+
+                <!-- Card: Oficina de Teoria Musical -->
+                <article class="card">
+                    <img src="https://via.placeholder.com/400x150?text=Teoria+Musical" alt="Imagem representando Oficina de Teoria Musical">
+                    <div class="card-content">
+                        <h3>Oficina de Teoria Musical</h3>
+                        <p>Workshop intensivo de teoria musical aplicada à bateria e à improvisação.</p>
+                        <a href="#contato">Agendar</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- =============================
+             6. SEÇÃO: ENVIO DE CURRÍCULOS (Professores)
+             ============================= -->
+        <section id="professores" class="professores" aria-labelledby="professores-title">
+            <h2 id="professores-title">Seja Nosso Professor</h2>
+            <p>Se você é professor(a) de música e deseja fazer parte da equipe, envie seu currículo para avaliação:</p>
+            <form action="#" method="post" enctype="multipart/form-data" novalidate>
+                <!-- Campo: Nome Completo -->
+                <div class="form-group">
+                    <label for="nome-professor">Nome Completo:</label>
+                    <input type="text" id="nome-professor" name="nome-professor" required placeholder="Digite seu nome completo">
+                </div>
+
+                <!-- Campo: E-mail -->
+                <div class="form-group">
+                    <label for="email-professor">E-mail:</label>
+                    <input type="email" id="email-professor" name="email-professor" required placeholder="seuemail@exemplo.com">
+                </div>
+
+                <!-- Campo: Telefone -->
+                <div class="form-group">
+                    <label for="telefone-professor">Telefone / WhatsApp:</label>
+                    <input type="text" id="telefone-professor" name="telefone-professor" required placeholder="(DDD) 9xxxx-xxxx">
+                </div>
+
+                <!-- Campo: Área de Atuação -->
+                <div class="form-group">
+                    <label for="area-atuacao">Área de Atuação:</label>
+                    <input type="text" id="area-atuacao" name="area-atuacao" required placeholder="Ex.: Bateria, Teoria, Percussão, etc.">
+                </div>
+
+                <!-- Campo: Experiência (Texto) -->
+                <div class="form-group">
+                    <label for="experiencia-professor">Breve Descrição da Experiência:</label>
+                    <textarea id="experiencia-professor" name="experiencia-professor" placeholder="Conte-nos sobre sua trajetória, bandas, ensino, certificações..."></textarea>
+                </div>
+
+                <!-- Campo: Upload de Currículo -->
+                <div class="form-group">
+                    <label for="cv-professor">Anexe seu Currículo (PDF, DOC):</label>
+                    <input type="file" id="cv-professor" name="cv-professor" accept=".pdf, .doc, .docx" required>
+                </div>
+
+                <!-- Botão de Envio -->
+                <div class="form-group">
+                    <input type="submit" value="Enviar Currículo">
+                </div>
+            </form>
+        </section>
+
+        <!-- =============================
+             7. SEÇÃO: CONTATO E ATALHOS RÁPIDOS
+             ============================= -->
+        <section id="contato" class="contato-rapido" aria-labelledby="contato-title">
+            <h2 id="contato-title">Contato Rápido</h2>
+            <p>Qualquer dúvida ou solicitação, fale conosco:</p>
+            <a href="https://instagram.com/sonnyheros" target="_blank" rel="noopener" aria-label="Instagram de Sonny Heros">
+                <span>📸</span> Instagram
+            </a>
+            <a href="https://cool-sorcery.bandcamp.com/" target="_blank" rel="noopener" aria-label="Bandcamp da Cool Sorcery">
+                <span>🎵</span> Bandcamp Cool Sorcery
+            </a>
+            <a href="mailto:contato@escolabateriasonny.com.br" aria-label="Enviar e-mail para a escola">
+                <span>✉️</span> E-mail
+            </a>
+            <a href="tel:+5561999999999" aria-label="Ligar para a escola">
+                <span>📞</span> (61) 99999-9999
+            </a>
+        </section>
+    </main>
+
+    <!-- =============================
+         8. RODAPÉ
+         ============================= -->
+    <footer>
+        <p>&copy; 2025 Escola de Bateria Sonny Heros. Todos os direitos reservados.</p>
+        <div class="redes-sociais" aria-label="Redes Sociais">
+            <a href="https://instagram.com/sonnyheros" target="_blank" rel="noopener" aria-label="Instagram de Sonny Heros">📸</a>
+            <a href="https://cool-sorcery.bandcamp.com/" target="_blank" rel="noopener" aria-label="Bandcamp da Cool Sorcery">🎵</a>
+        </div>
+    </footer>
+
+</body>
+</html>

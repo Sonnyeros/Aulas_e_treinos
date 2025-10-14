@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="PT-BR">
+    <head>
+        <meta charset="utf-8">
+        <title>Aula 28/04</title>
+        <!--CSS Interno é defninido na seção head dentro da tag style e afeta apenas a página inicial.-->
+        <style>
+            table, th, td, p {
+                border: 1px solid black;
+            }
+        p {
+            color: red;
+        }
+        </style>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1 id="tabela">Tabelas</h1>
+        <table border="1">
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Sexo</th>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>25</td>
+                <td>M</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>30</td>
+                <td>F</td>
+            </tr>
+            <tr>
+                <td>Carlos</td>
+                <td>35</td>
+                <td>M</td>
+            </tr>
+        </table>
+        <br><hr>
+
+        <h1 style="background-color: black; color: white">Tipos de Links</h1>
+        <h3>Link Externo</h3>
+        <!--Link Externo-->
+        <a href="https://www.google.com.br/" target="_blank"> Acessar Google</a>
+        <br><hr>
+        <h3>Link Âncora 1</h3>
+        <!--Link Âncora-->
+        <a href="#rodape">Ir para o rodapé</a>
+        <h3>Link Âncora 2</h3>
+        <!--Link Âncora 2-->
+        <a href="#tabela">Ir para a Tabela</a>
+        <br><hr>
+        <h3>Link Interno</h3>
+        <!--Link Interno-->
+        <a href="prova.html" target="_blank">Ir para a Prova do dia 14/04.</a>
+        <br><hr>
+
+        
+        <h1 style="color: white; background-color: black">Tipos de CSS</h1>
+        <h3>CSS Inline</h3>
+        <!--CSS Inline é aplicado diretamente no elemento usando o atributo style. 
+        Maior prioridade, mas dificulta a manutenção-->
+        <p id="rodape" style="color: rgb(0, 26, 255); font-size: 16px;" >Este é um parágrafo com CSS Inline.
+            (As bordas estão vindo do CSS Interno feito no head e explicado no próximo tópico.)
+        </p>
+        <hr>
+        <h3>CSS Interno</h3>
+        <!--CSS Interno é definido na seção head dentro da tag style e afeta apenas a página inicial.-->
+        <p>CSS Interno é definido na seção head, usando a tag style e usado para estilizar vários parte ao mesmo tempo.
+            No nosso caso, estamos estilizando a tabela no início da página e os parágrafos ao mesmo tempo.</p>
+        <hr>
+        <h3>CSS Externo</h3>
+        <p>CSS Externo é um arquivo .css separado, vinculado via tag: link. É ideal para manutenção e reutilização. Exemplo:</p>
+        <h4>Esse cabeçalho está sendo estilizado por um arquivo .css.</h4>
+        <hr>
+        <h2>DIVs</h2>
+        <div class="div1">DIV 1</div><br>
+        <div class="div2">DIV 2</div><br>
+        <div id="div3">DIV 3</div>
+    </body>
+</html>

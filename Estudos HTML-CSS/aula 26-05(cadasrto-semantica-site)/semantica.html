@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Semântica</title>
+    <meta charset='utf-8'> <!-- esse meta serve para definir o tipo de caracteres -->
+    <meta name='viewport' content='width=device-width, initial-scale=1'> <!-- esse meta serve para definir o tamanho da tela -->
+    <link rel="stylesheet" href="style_semantica.css"> <!-- link para o arquivo de estilo (não está sendo usado) -->
+    <style> /* esse style serve para definir o estilo da página */
+        
+        body{ /* esse body serve para definir o estilo do corpo da página */
+            background-color: aliceblue;
+        }
+
+        header{ /* esse header serve para definir o cabeçalho da página */
+            background-color: cadetblue;
+            padding: 40px;
+            text-align: center;
+            font-size: 50px;
+        }
+
+        main{ /* esse main serve para definir o conteúdo principal da página */
+            padding: 20px;
+            background-color: #0b192c;
+            color: #fff;
+        }
+
+        nav{ /* esse nav serve para definir o menu da página */
+            margin: 20px;
+            text-align: center;
+        }
+
+        nav a{ /* esse nav a serve para definir o estilo dos links do menu */
+            margin: 15px;
+            text-decoration: none;
+            color: black;
+        }
+
+        aside{ /* esse aside serve para definir o lado da página */
+            padding: 20px;
+            margin: 20px;
+        }
+
+        footer{ /* esse footer serve para definir o rodapé da página */
+            text-align: center;
+            padding: 10px;
+            background-color: #000;
+            color: #fff;
+            position: relative;
+        }
+        
+    </style>
+    
+</head>
+<body>
+
+    <header> <!-- header é um bloco que serve para o cabeçalho do site. -->
+        Site da Turma de Design para Web de 2025.
+    </header>
+
+    <nav> <!-- nav é um bloco que serve para o menu do site. -->
+        <a href="#">Home</a> <!-- a é um bloco que serve para o link do site. -->
+        <a href="#">Sobre</a>
+        <a href="#">Contato</a>
+    </nav>
+
+    <div> <!-- div é um bloco que serve para estilização. Não possui semântica (estrutura), ou seja, sem 
+        nada dentro dela, ela nem sequer aparece. Pro navegador, estilo não faz diferença, mas semântica faz
+        TODA a diferença, porque os buscadores de site procuram por sermântica, ou seja, um site com
+        semântica ruim ou sem semântica é mais difícil ou impossível de ser encontrado. Com isso em mente,
+        sempre dê preferências por tags com semântica!-->
+        <main> <!-- main é um bloco que serve para o conteúdo principal do site. -->
+            <h2>Site da Turme de Design Web</h2>
+            <p>Este é o site oficial da turma de Design Web de 2025 da Faculdade Projeção de Sobradinho.           
+            </p>
+        </main>
+  
+        <aside> <!-- aside é um bloco que serve para o conteúdo adicional do site. -->
+            <h3>Informações Adicionais</h3>
+            <p>Aqui temos mais informações sobre a turma</p>
+        </aside>
+    </div>
+
+    <footer> <!-- footer é um bloco que serve para o rodapé do site. -->
+        <p>&copy; 2025 Todos os direitos reservados</p> <!-- &copy é um código HTML que serve para o símbolo de copyright. -->
+    </footer>
+
+</body>
+</html>

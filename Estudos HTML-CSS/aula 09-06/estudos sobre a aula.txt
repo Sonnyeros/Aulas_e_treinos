@@ -1,0 +1,56 @@
+1- o comando "display: flex" dentro da estilização interna de uma div serve para habilitar os comandos de movimentação.
+
+2- o comando "flex-direction: " propriedade que define a direção dos itens, e aceita os seguintes valores:
+     *row: coloca os itens em linha da esquerda pra direita.
+     *row-reverse: coloca os itens em linha da direita pra esquerda.
+     *column: coluca os itens em coluna de cima pra baixo.
+     *column-reverse: coloca os itens em coluna de baixo pra cima.
+
+3- o comando "justify-content: " propriedade que alinha os itens horizontalmente e aceita os valores:
+     * flex-start: alinha ao lado esquerdo
+     * flex-end: alinha ao lado direito
+     * center: alinha ao centro
+     * space-between: exibe os itens com espaçamento igual entre eles
+     * space-around: exibe os itens com espaçamento ao redor deles
+
+4- o comando "align-itens: " propriedade que alinha os itens verticalmente e aceita os valores:
+     * flex-start: alinha no topo
+     * flex-end: alinha no fundo
+     * center: alinha ao centro
+     * baseline: alinha na linha de base
+     * stretch: os itens são esticados para caber no recipiente. (?)
+
+5- o comando "order" ordena itens individuais no seguinte raciocínio: Se existem 3 itens (precisam estar idenficados), serão númerados em "-1, 0, 1".
+Usando então um comando do tipo ".itemX" para selecionar qual item quer mudar de ordem, deve se proceder com:
+Ex.:
+.itemX{     
+     order: -1
+}
+     Esse comando está selecionando algum item dos 3 e definindo ele como o primeiro da ordem (lembrando que nesse caso a ordem é "-1, 0, 1" justamente por se
+tratar de 3 itens).
+
+6- o comando "align-self" é uma propriedade para aplicar a itens individuais e aceita os mesmos valores do comando "align-itens" porém apenas pra um item espe
+cífico. Funciona exatamente como no "order":
+
+.itemX{
+     align-self: flex-start (alinha o item especificado ao lado esquerdo)
+}
+
+7- o comando "flex-wrap" organiza e espalha igualmente os itens dentro do espaço designado e aceita os valores:
+     * nowrap: organiza e espalha e uma única linha
+     * wrap: organiza e espalha em linhas adicionais (cria linhas automaticamente dentro do espaço disignado se for preciso/possível)
+     * wrap-reverse: organiza e espalha em linhas adicicionais ao contrário.
+
+8- o comando "flex-flow" é a fusão das propriedades "flex-direction" e "flex-wrap" e recebe combinações do que o direction recebe junto ao que o wrap recebe.
+Exs.:
+     * row wrap: coloca os itens em linha da esquerda pra direita. + organiza e espalha em linhas adicionais
+     * column-reverse wrap-reverse: coloca os itens em coluna de baixo pra cima + organiza e espalha em linhas adicicionais ao contrário
+
+9- o comando "align-content" é uma propriedade que define o espaçamento entre várias linhas e assume os seguintes valores:
+
+     * flex-start: compacta as linhas no topo
+     * flex-end: compacta as linhas no fundo
+     * center: compacta as linhas ao centro vertical
+     * space-between: linhas com espaçamento igual entre elas
+     * space-around: linhas com espaçamento igual ao redor delas
+     * stretch: linhas esticadas para caber no espaço designado.

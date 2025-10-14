@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIVs</title>
+    <style>
+        #container{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+        .div1{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            border: 10px solid red;
+        }
+        .div2{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border: solid 10px blue;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">DIVs</h1>
+    <p>Uma div é um container que serve para agrupar coisas dentro do código.</p>
+    <div id="container">
+        <div class="div1"></div>
+        <div class="div2"></div>
+        <div class="div1"></div>   
+    </div>    
+</body>
+</html>

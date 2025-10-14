@@ -1,0 +1,3 @@
+HTML NÃO É UMA LINGUAGEM DE PROGRAMAÇÃO, E SIM UMA LINGUAGEM DE MARCAÇÃO!
+Ou seja, você não programa em HTML, e sim DESENVOLVE coisas em HTML.
+Se alguém lhe perguntar em qual linguagem você programa, nunca respnda HTML!

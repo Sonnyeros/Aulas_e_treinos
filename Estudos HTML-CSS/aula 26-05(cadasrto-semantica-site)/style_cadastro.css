@@ -1,0 +1,64 @@
+/*Reset - remove o estilo padrão do navegador*/
+*{ /*Seleciona tudo*/
+    margin: 0; /*Remove o espaçamento padrão*/
+    padding: 0; /*Remove o preenchimento padrão*/
+}
+
+body { /*Seleciona o body*/
+    background-color: #f2f2f2;
+    display: flex; /*Ativa o flexbox (utilizado para colocar coisas em lugares diferentes)*/
+    flex-direction: column; /*Define a direção do flexbox, no caso, em colunas.*/
+    align-items: center; /*Alinha os itens no centro*/
+    padding: 60px; /*Coloca 60px de padding em todas as direções*/
+}
+
+h2{
+    margin-bottom: 30px; /*Coloca 30px de margin abaixo do h2*/
+    color: #333; /*Define a cor do texto como cinza*/
+}
+
+form {
+    background-color: #fff; /*Define a cor de fundo do formulário como branco*/
+    padding: 20px; /*Coloca 20px de padding em todas as direções*/
+    border-radius: 5px; /*Define a borda do formulário como arredondada*/
+    width: 500px; /*Define a largura do formulário*/
+}
+
+fieldset{
+    border: 1px solid #ddd; /*Define a borda do fieldset como sólida e com 1px de espessura e cor cinza*/
+    border-radius: 8px; /*Define a borda do fieldset como arredondada*/
+    padding: 20px; /*Coloca 20px de padding em todas as direções*/
+}
+
+legend{
+    font-weight: bold; /*Define a fonte em negrito*/
+    padding: 0 10px; /*Coloca 0 de padding em cima e em baixo e 10px de padding na esquerda e direita*/
+    color: #555; /*Define a cor do texto como cinza*/
+}
+
+label{
+    display: block; /*Define o label como um bloco*/
+    margin-top: 15px; /*Coloca 15px de margin acima do label*/
+    margin-bottom: 5px; /*Coloca 5px de margin abaixo do label*/
+    color: #444; /*Define a cor do texto como cinza*/
+    font-size: 15px; /*Define o tamanho da fonte*/
+}
+
+textarea{
+    width: 100%; /*Define a largura do textarea como 100%*/
+    height: 100px; /*Define a altura do textarea como 100px*/
+    border-radius: 6px; /*Define a borda do textarea como arredondada*/
+    border: 1px solid #ccc; /*Define a borda do textarea como sólida e com 1px de espessura e cor cinza*/
+}
+
+button{
+    padding: 10px; /*Coloca 10px de padding em todas as direções*/
+    width: 40%; /*Define a largura do botão como 40%*/
+    margin-top: 20px; /*Coloca 20px de margin acima do botão*/
+    background-color: #66a6ff; /*Define a cor de fundo do botão como azul*/
+    border-radius: 6px; /*Define a borda do botão como arredondada*/
+    border: none; /*Remove a borda do botão*/
+    cursor: pointer; /*Define o cursor do mouse como pointer*/
+    font-size: 15px; /*Define o tamanho da fonte do botão*/
+    font-weight: bold; /*Define a fonte do botão como negrito*/
+}
