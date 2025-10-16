@@ -1,0 +1,25 @@
+GIT: é um software de versionamento de softwares, um repositório local para manter o versionamento de um software. Esse tipo de software é usado desde 1985
+tanto por empresas gigantes quanto pequenas e até mesmo por programadores autônomos. Veja uma breve história de como ele surgiu:
+
+	Em 1985 é criado o primeiro software de versionamento foi o CVS (Concorrent Version System). Ele é um VCS (Version Controller Software) centralizado,
+open source e mais popular no meio, mas possuia muitos problemas como demora para fazer commit e atualizar a versão do software.
+	Em 2000 é criado um outro chamado SVN (Subversion). Também é centralizado e open source, bem parecido com o CVS, inclusive dito como por alguns como
+uma cópia mesmo nos problemas, que apesar de serem mais atenuados, eram os mesmos. Está ativo até hoje.
+	Também nos anos 2000 é criado outro software de versionamento chamado BitKeeper. Esse não é centralizado, ou seja, foi distribuído, porém não era open
+source, e sim possui proprietário, porém, possui uma versão de comunidade (o que fez o criador ter problemas com crackers em 2004). O software não se parecia 
+com o CVS e isso fez com que fosse muito popular.
+	Em 2005 um dos criadores do código do BitKeeper teve em desentendimento com o dono por conta das providências tomadas em relaçao ao problema com cracker
+em 2004, e decidiu criar o seu próprio software de versionamento. Por estar com raiva e motivado a fazer algo melhor do que qualquer outro, esse programador obte
+ve sucesso em sua criação, que segundo alguns relatos, levou cerca de 10 dias pra ter sua primeira versão usável. Esse software foi chamado de GIT. Essa sigla
+significa Global Information Tracker (Trackeador de Informações Globais).
+
+
+GitHub: é um software de repositório remoto, proprietário criado em 2008, é baseado em GIT e surgiu como um local de hospedagem de códigos, mas também funciona 
+como uma rede social de programadores. Em seu primeiro ano só permitia rpositórios públicos, e em 2009 já possuía mais de 46k de repositórios. Em 2010 possuía 
+mais de 100k de repositórios e mais de 1M de usuários. Em 2011 se tornou o software mais usado no ramo. Em 2013 já tinha 3M de usuários e 5M de repositórios. 
+Em 2018  GitHub passou pelo maior ataque de DDOS da história, desestruturando a empresa por um pequeno momento, já que também em 2018 eles foram comprados pela
+Microsoft por 7,5 bilhões de DÓLARES. Mesmo assim o GitHub continuou a operar de forma quase totalmente independente, e em 2020 comprou a NPM (Node Package 
+Manager), um gestor de pacote feito em JavaScript e utilizado pelo NodeJS. Dessa forma, a Microsoft se tornou dona do maior hospedeiro de códigos, a maior base
+de dados para programadores, e o maior gestor de pacotes de JavaScript do mundo!
+	Curiosidade: O mascote do GitHub é um OctoCat, um polvo com cabeça de gato, criado pelo inglês Simon Oxley, que também criou o pássaro do Twitter.
+ 
