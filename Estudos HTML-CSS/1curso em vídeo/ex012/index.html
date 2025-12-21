@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Vídeos em hospedagem local</h1>
+    <p>Esses vídeos estão hospedados no meu próprio servidor, o que pode tornar o site pesado devido ao tamanho dos arquivos, o que vai custar mais caro ao cliente. Portanto, caso um cliente solicite hospedagem local, explique e sugira hospedagem externa, que estará presente em outro exercício.</p>
+    <p>Vídeo em mp3:</p>
+    <video src="midia/arvore-natal.mp4" width="560" height="315" controls></video>
+    <br>
+    <p>Vídeo em webm:</p>
+    <video src="midia/Arvore-Natal.webm" width="560" height="315" controls></video>
+    <h2>Outras formas de hospedar vídeos localmente</h2>
+    <p>Esse vídeo possui um versão em mp4 e webm para certificar a compatibilidade com todo tipo de navegador, incluindo um parágrafo que só será exibido em caso de incompatibilidade comunicando o fato.</p>
+    <video controls loop poster="../ex012/imagens/natal-torta-maca.png" width="560" height="315">
+        <source src="midia/arvore-natal.mp4" type="video/mp4">
+        <source src="midia/Arvore-Natal.webm" type="video/webm">
+        <p>Seu navegador não possui compatibilidade com reprodução de vídeos.</p>
+    </video>
+    <h1>Inserindo vídeos do YouTube</h1>
+    <p>Nessa forma de hospedagem os vídeos não consomem serviço do seu site, e sim do YouTube ou qualquer outra plataforma de hospedagem de vídeo, o que deixa o seu site mais leve e barato.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/K9rzIwPS43U?si=3uHMpEbIyCKvF_bK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h1>Inserindo vídeo do Vimeo</h1>
+    <iframe title="vimeo-player" src="https://player.vimeo.com/video/29315013?h=4a7399cc6d" width="560" height="315" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"  allowfullscreen></iframe>
+</body>
+</html>
