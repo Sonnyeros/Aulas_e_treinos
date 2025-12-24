@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'Valentine';
+            src: url(fontes/Be\ My\ Valentine.otf) format('opentype'), url(fontes/Be\ My\ Valentine.ttf) format('truetype');
+            /*Tipos de format(): opentype(otf), trutype(ttf), embedded-opentype, truetype-aat, svg*/
+            font-weight: normal;
+            font-size: normal;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: normal
+        }
+        h1{
+            font-family: 'Valentine', 'Times New Roman', Times, serif;
+            font-size: 3em;
+            font-weight: normal
+        }
+    </style>
+</head>
+<body>
+    <h1>Título do Exercício</h1>
+    <img src="fontes/Be My Valentine.png" alt="Imagem da Fonte">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates reiciendis deleniti aperiam exercitationem, quo nisi praesentium, aliquam, iusto alias in rem cumque? Aspernatur ratione suscipit soluta a pariatur obcaecati ex!</p>
+</body>
+</html>
