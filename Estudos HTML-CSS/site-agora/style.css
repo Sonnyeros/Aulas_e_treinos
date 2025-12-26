@@ -1,0 +1,79 @@
+@font-face {
+            font-family: 'FonteAgora';
+            src: url(fontes/CormorantGaramond-Bold.ttf) format('truetype') url(fontes/CormorantGaramond-BoldItalic.ttf) format('truetype') url(fontes/CormorantGaramond-Italic.ttf) format('truetype') url(fontes/CormorantGaramond-Light.ttf) format('truetype') url(fontes/CormorantGaramond-LightItalic.ttf) format('truetype') url(fontes/CormorantGaramond-Medium.ttf) format('truetype') url(fontes/CormorantGaramond-MediumItalic.ttf) format('truetype') url(fontes/CormorantGaramond-Regular.ttf) format('truetype') url(fontes/CormorantGaramond-SemiBold.ttf) format('truetype') url(fontes/CormorantGaramond-SemiBoldItalic.ttf) format('truetype');
+            font-weight: normal;
+            font-size: normal;
+        }
+        
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav ul{
+    list-style-type: none;
+    overflow: hidden;
+    background-color:#EBB629;
+    text-shadow: 2px 2px 2px #8f8f8f;
+    border-radius: 5px;
+}
+
+nav ul li{
+    float: none;
+}
+
+li a{
+    float: left;
+    padding: 10px;
+    background-color: #EBB629;
+    color: #0D0D0D;
+    flex-wrap: wrap;
+    text-decoration: none;
+    font-family: 'FonteAgora';
+    font-size: x-large;
+}
+        
+        
+li :hover{
+    background-color: #E3C60B
+}
+
+body{
+    background-image: linear-gradient(to bottom, #131313ec, #1d1d1d, #575757,   #998608d7);
+}
+
+h1{
+    padding: 20px;
+    font-family: 'FonteAgora';
+    text-align: center;
+    color: #E3C60B;
+    font-weight: normal;
+    font-size: 3em;
+    text-shadow: 2px 2px 5px #615448
+        }
+h2{
+    padding: 10px;
+    font-family: 'FonteAgora';
+    text-align: left;
+    color: #EBB629;
+    font-weight: normal;
+    font-size: 3em;
+}
+
+img{
+    border-radius: 10px;
+    box-shadow: 1px 10px 15px #615448;
+    flex-wrap: wrap;
+            
+}
+        
+p{
+    border-radius: 20px; /*formato das bordas. Quanto mais px, mais arredondadas*/
+    box-shadow: 5px 5px 15px #615448; /*sobra: tamanho para o lado, tamanho para baixa, espalhamento e cor*/
+    width: auto; /*largura da caixa*/
+    padding: 20px; /*acolchoamente: espaço entre a lateral da tela*/
+    margin: auto; /*sempre centralizado independente do tamanho da tela*/
+    justify-content: flex-start;
+    color: white;
+    font-family: 'FonteAgora';
+}
