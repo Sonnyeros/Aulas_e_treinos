@@ -1,0 +1,35 @@
+@media screen and (max-width: 999px){
+    
+    header{
+        flex-direction: column;
+    }
+
+    main{
+        flex-direction: column;
+    }
+
+    aside{
+        align-self: center;
+    }
+
+    form{
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    input{
+        align-self: center;
+    }
+
+    img{
+        -display: none;
+        margin-top: 40px;
+        margin-left: 180px;
+        width: 400px;
+        align-items: center;
+    }
+
+    ul{
+        text-align: center;
+    }
+}
