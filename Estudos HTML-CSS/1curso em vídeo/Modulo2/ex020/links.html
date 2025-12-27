@@ -14,18 +14,32 @@
             text-decoration: none;
             font-weight: bold;
         }
-        a:visited{
+        a:visited{ /*efeitos do link já clicado*/
             color: darkred;
         }
-        a:hover{
+        a:hover{ /*efeitos quando passa o cursor em cima*/
+            color: black;
             text-decoration: underline;
+        }
+        a:active{ /*efeito quando clicka no link*/
+            color: darkgoldenrod;
+        }
+        a::after{ /*conteúdo logo após (ou antes, use::before) dos links (e que não será inserido no body)*/
+            content: ' [link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+        .especial{
+            background-color: rgb(224, 113, 113);
+            color: white;
         }
     </style>
 </head>
 <body>
     <h1>Personalizando Links</h1>
     <ul>
-        <li><a href="https://github.com/Sonnyeros" ref="next" target="_blank">Repositório GitHub</a></li>
+        <li><a href="https://github.com/Sonnyeros" ref="next" target="_blank" class="especial">Repositório GitHub</a></li>
         <li><a href="https://www.youtube.com/channel/UCg7oHaL_xw3rCraM9i_yiAQ" ref="next" target="_blank">Canal do Yotube</a></li>
         <li><a href="https://www.cursoemvideo.com/" ref="next" target="_blank">Site do CursoemVídeo</a></li>
     </ul>
