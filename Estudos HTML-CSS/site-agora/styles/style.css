@@ -1,0 +1,145 @@
+body{
+    font-family: 'FonteAgora';
+    background-image: linear-gradient(to bottom, #131313ec, #1d1d1d, #575757,   #695c06d7);
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;
+}
+
+#titulo{
+    flex-direction: column;
+    line-height: 10px;
+    border: 1px solid #E3C60B;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+h1{
+    text-align: center;
+    color: #E3C60B;
+    font-weight: 200;
+    font-size: 3em;
+    text-shadow: 2px 2px 5px #615448
+}
+
+.charme{
+    font-size: 5em;
+    text-decoration: underline;
+    font-family: 'FonteagoraBoldItalic';
+}
+
+.menu{
+    border: 1px solid #E3C60B;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+li{
+    display: inline-block;
+    margin: 10px;
+}
+
+
+a{
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    font-family: 'FonteAgoraBold';
+    font-size: 2em;
+    border-radius: 15px;
+}
+
+
+li :hover{
+    text-decoration: underline;
+    color: white;
+    transition: 0.5s all;
+}
+
+#contrate-nos-button{
+    color: #E3C60B;
+}
+#contrate-nos-button:hover{
+    color: #1d1d1d;
+    background-color: #E3C60B;
+    transition: 0.5s all;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+h2{
+    padding: 10px;
+    font-family: 'FonteAgora';
+    text-align: left;
+    color: #E3C60B;
+    text-shadow: 2px 2px 8px #413830;
+    font-weight: normal;
+    font-size: 3em;
+}
+
+.h2direita{
+    text-align: right;
+    text-shadow: 4px 4px 10px #525252;
+
+}
+
+.imagembanda{
+    border-radius: 10px;
+    box-shadow: 1px 10px 15px #615448;
+    flex-wrap: wrap;
+    max-width: 1250px;
+    border-bottom: 2px; 
+}
+
+.releasebanda{
+    box-shadow: 0px 0px 0px #615448;
+    font-size: larger;
+}
+
+.lendasfusion{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+.lendastxt{
+    box-shadow: none;
+    color: #E3C60B;
+    font-size: 2em;
+    text-shadow: 1px 1px 5px #EBB629;
+    text-align: justify;
+}
+
+img{
+    max-width: 300px;
+    padding: 6px;
+}
+
+span{
+    text-shadow: 4px 4px 10px #413830;
+}
+
+
+p{
+    border-radius: 20px; /*formato das bordas. Quanto mais px, mais arredondadas*/
+    box-shadow: 2px 2px 8px #615448; /*sombra: tamanho para o lado, tamanho para baixa, espalhamento e cor*/
+    width: auto; /*largura da caixa*/
+    padding: 20px; /*acolchoamente: espaço entre a lateral da tela*/
+    margin: auto; /*sempre centralizado independente do tamanho da tela*/
+    color: white;
+    font-family: 'FonteAgora';
+    font-size: larger;
+    text-indent: 50px;
+    text-align: justify;
+}

@@ -1,0 +1,58 @@
+@font-face {
+            font-family: 'FonteAgora';
+            src: url(fontes/CormorantGaramond-Bold.ttf) format('truetype');
+            font-weight: normal;
+            font-size: normal;
+        }
+@font-face {
+            font-family: 'FonteAgoraLight' ;
+            src: url(fontes/CormorantGaramond-Light.ttf) format('truetype');
+}
+@font-face {
+            font-family: 'FonteAgoraBoldItalic';
+            src: url(fontes/CormorantGaramond-BoldItalic.ttf) format('truetype');
+            font-weight: normal;
+            font-size: normal;
+}
+@font-face {
+            font-family: 'FonteAgoraIalic';
+            src: url(fontes/CormorantGaramond-Italic.ttf) format('truetype');
+            font-weight: normal;
+            font-size: normal;
+}
+@font-face {
+            font-family: 'FonteAgoraLightItalic';
+            src: url(fontes/CormorantGaramond-LightItalic.ttf) format('truetype');
+            font-weight: normal;
+            font-size: normal;
+}
+@font-face {
+            font-family: 'FonteAgoraMedium';
+            src: url(fontes/CormorantGaramond-Medium.ttf) format('truetype');
+            font-weight: normal;
+            font-size: normal;
+}
+@font-face {
+            font-family: 'FonteAgoraMediumItalic';
+            src: url(fontes/CormorantGaramond-MediumItalic.ttf) format('truetype');
+            font-weight: normal;
+            font-size: normal;
+}
+@font-face {
+            font-family: 'FonteAgoraRegular';
+            src: url(fontes/CormorantGaramond-Regular.ttf) format('truetype');
+            font-weight: normal;
+            font-size: normal;
+}
+@font-face {
+            font-family: 'FonteAgoraSemiBold';
+            src: url(fontes/CormorantGaramond-SemiBold.ttf) format('truetype');
+            font-weight: normal;
+            font-size: normal;    
+}
+@font-face {
+            font-family: 'FonteAgoraSemiBoldItalic';
+            src: url(fontes/CormorantGaramond-SemiBoldItalic.ttf) format('truetype');
+            font-weight: normal;
+            font-size: normal;
+}
