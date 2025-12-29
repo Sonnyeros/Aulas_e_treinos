@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Links</title>
     <style>
+
+        /*Coisas aprendidas nessa aula: SELETORES PERSONALIZADOS
+            #  = id
+            .  = class
+            :  = pseudo-class
+            :: = pseudo-element
+            >  = children 
+        */
+
         body{
             font-family: Arial, Helvetica, sans-serif;
         }
@@ -30,6 +39,10 @@
             font-weight: normal;
             color: darkgray;
         }
+
+        a::before{ /*comteúdo logo antes (ou depois, use::after) dos links (e que não será inserido no body)*/
+            content: '👉';
+        }
         .especial{
             background-color: rgb(224, 113, 113);
             color: white;
@@ -38,7 +51,7 @@
 </head>
 <body>
     <h1>Personalizando Links</h1>
-    <ul>
+    <ul type="none">
         <li><a href="https://github.com/Sonnyeros" ref="next" target="_blank" class="especial">Repositório GitHub</a></li>
         <li><a href="https://www.youtube.com/channel/UCg7oHaL_xw3rCraM9i_yiAQ" ref="next" target="_blank">Canal do Yotube</a></li>
         <li><a href="https://www.cursoemvideo.com/" ref="next" target="_blank">Site do CursoemVídeo</a></li>
