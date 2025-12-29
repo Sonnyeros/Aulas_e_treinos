@@ -1,6 +1,6 @@
 body{
     font-family: 'FonteAgora';
-    background-image: linear-gradient(to bottom, #131313ec, #1d1d1d, #575757,   #695c06d7);
+    background-image: linear-gradient(to bottom, #000000, #141414,  #241f03d7,   #695c06d7);
     max-width: 1300px;
     margin: 0 auto;
     padding: 15px;
@@ -11,7 +11,7 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: 0px;
+    margin-bottom: 10px;
 }
 
 #titulo{
@@ -27,7 +27,7 @@ h1{
     color: #E3C60B;
     font-weight: 200;
     font-size: 3em;
-    text-shadow: 2px 2px 5px #615448
+    text-shadow: 2px 2px 5px #615448;
 }
 
 .charme{
@@ -76,7 +76,7 @@ li :hover{
 main{
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 h2{
@@ -100,7 +100,6 @@ h2{
     box-shadow: 1px 10px 15px #615448;
     flex-wrap: wrap;
     max-width: 1250px;
-    border-bottom: 2px; 
 }
 
 .releasebanda{
@@ -117,23 +116,27 @@ h2{
     box-shadow: none;
     color: #E3C60B;
     font-size: 2em;
-    text-shadow: 1px 1px 5px #EBB629;
+    text-shadow: 3px 3px 6px #615448;
     text-align: justify;
+    margin-bottom: 50px;
 }
 
 img{
     max-width: 300px;
-    padding: 6px;
+    margin: 6px;
+    box-shadow: 0px 1px 5px 4px #00000065;
 }
 
-span{
+.quemsomos{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
     text-shadow: 4px 4px 10px #413830;
 }
 
 
 p{
     border-radius: 20px; /*formato das bordas. Quanto mais px, mais arredondadas*/
-    box-shadow: 2px 2px 8px #615448; /*sombra: tamanho para o lado, tamanho para baixa, espalhamento e cor*/
+    box-shadow: 2px 2px 8px #1b1b1b93; /*sombra: tamanho para o lado, tamanho para baixo, espalhamento e cor*/
     width: auto; /*largura da caixa*/
     padding: 20px; /*acolchoamente: espaço entre a lateral da tela*/
     margin: auto; /*sempre centralizado independente do tamanho da tela*/
