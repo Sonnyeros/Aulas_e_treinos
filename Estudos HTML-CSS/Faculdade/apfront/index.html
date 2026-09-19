@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício1</title>
+
+    <script>
+        function atualizar(){
+            var cor = document.getElementById("fcor").value
+            var img = document.getElementById("fimagem").value
+
+            document.getElementById("Imagem").src = img
+            document.getElementById("linkimagem").href = img
+            document.body.style.backgroundColor = cor
+
+            document.getElementById("fcor").value = ""
+            document.getElementById("fimagem").value = ""
+        }
+    </script>
+
+    <style>
+        .formulario{
+            background-color: rgb(78, 95, 0);
+            color: yellow;
+            width: 400px;
+            padding: 10px;
+            margin: auto;
+            box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.829);
+        }
+
+        #button{
+            text-align: center;
+            display: block;
+            margin: auto;
+        }
+
+        label{
+            font-size: 20px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.637);
+            display: inline-block;
+            width: 150px;
+        }
+
+        .textoeimagem{
+            margin: auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="formulario">
+        <form>
+            <label for="fcor">Cor de Fundo: </label>
+            <input type="text" id="fcor" name="fcor">
+        <br>
+            <label for="fimagem">Imagem: </label>
+            <input type="text" id="fimagem" name="fimagem">
+        <br><br>
+        <input type="button" value="Enviar" onclick="atualizar()" id="button">
+        </form>
+    </div>
+
+    <div class="textoeimagem">
+        <h1>Imagem da Página</h1>
+        <a id="linkimagem"><img src="" alt="Imagem escolhida pelo usuário" id="Imagem"></a></div>
+</body>
+</html>
